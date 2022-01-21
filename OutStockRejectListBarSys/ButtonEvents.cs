@@ -48,7 +48,7 @@ namespace OutStockRejectListBarSys
 
                     //根据所获取的单号进行更新
                     var result = generate.Reject(flistid);
-                    mesage = result == "Finish" ? "所选销售出库单,反审核成功" : $"出库数据与条码系统交互操作异常,原因:'{result}'";
+                    mesage = result == "Finish" ? "所选择的销售出库单,反审核成功" : $"出库数据与条码系统交互操作异常,原因:'{result}'";
                     View.ShowMessage(mesage);
                 }
             }
